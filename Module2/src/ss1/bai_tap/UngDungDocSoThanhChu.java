@@ -123,7 +123,7 @@ public class UngDungDocSoThanhChu {
                     System.out.print("thirty ");
                     break;
                 case 4:
-                    System.out.print("fourty ");
+                    System.out.print("forty ");
                     break;
                 case 5:
                     System.out.print("fifty ");
