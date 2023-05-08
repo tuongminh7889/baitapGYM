@@ -1,6 +1,7 @@
 package ss1.bai_tap;
 
 import java.util.Scanner;
+
 public class UngDungDocSoThanhChu {
     public static void main(String[] args) {
         int so;
@@ -8,7 +9,7 @@ public class UngDungDocSoThanhChu {
         System.out.println("nhap so bat ky: ");
         so = Integer.parseInt(scanner.nextLine());
         int donViTram = so % 100;
-        if (so > 100 && so < 1000 || so<10) {
+        if (so > 100 && so < 1000 || so < 10) {
             switch (so / 100) {
                 case 1:
                     System.out.print("one ");
@@ -64,7 +65,7 @@ public class UngDungDocSoThanhChu {
                     System.out.print("thirty ");
                     break;
                 case 4:
-                    System.out.print("fourty ");
+                    System.out.print("forty ");
                     break;
                 case 5:
                     System.out.print("fifty ");
