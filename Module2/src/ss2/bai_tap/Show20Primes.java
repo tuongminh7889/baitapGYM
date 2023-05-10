@@ -7,17 +7,17 @@ public class Show20Primes {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input quantity primes :");
         int number = Integer.parseInt(scanner.nextLine());
-        int count = 0;
+        int countQuantity = 0;
         int n = 2;
-        while (count < number) {
-            int count1 = 0;
+        while (countQuantity < number) {
+            int countPrimes = 0;
             for (int i = 2; i <= n; i++) {
                 if (n % i == 0) {
-                    count1++;
+                    countPrimes++;
                 }
             }
-            if (count1 == 1) {
-                count++;
+            if (countPrimes == 1) {
+                countQuantity++;
                 System.out.print(" " + n);
             }
             n++;

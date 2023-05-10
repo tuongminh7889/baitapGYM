@@ -2,15 +2,14 @@ package ss1.bai_tap;
 
 import java.util.Scanner;
 
-public class UngDungDocSoThanhChu {
+public class NumberToString {
     public static void main(String[] args) {
-        int so;
+        int num;
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhap so bat ky: ");
-        so = Integer.parseInt(scanner.nextLine());
-        int donViTram = so % 100;
-        if (so > 100 && so < 1000 || so < 10) {
-            switch (so / 100) {
+        num = Integer.parseInt(scanner.nextLine());
+        if (num > 100 && num < 1000 || num < 10) {
+            switch (num / 100) {
                 case 1:
                     System.out.print("one ");
                     break;
@@ -40,10 +39,10 @@ public class UngDungDocSoThanhChu {
                     break;
             }
             System.out.print("hundred ");
-            if (donViTram > 0) {
+            if (num/10 > 0) {
                 System.out.print("and ");
             }
-            switch (donViTram) {
+            switch (num /10) {
                 case 11:
                     System.out.print("eleven ");
                     break;
@@ -57,7 +56,7 @@ public class UngDungDocSoThanhChu {
                     System.out.print("fifteen ");
                     break;
             }
-            switch (donViTram / 10) {
+            switch (num / 100) {
                 case 2:
                     System.out.print("twenty ");
                     break;
@@ -83,7 +82,7 @@ public class UngDungDocSoThanhChu {
                     System.out.print("ninety ");
                     break;
             }
-            switch (donViTram % 10) {
+            switch (num % 10) {
                 case 1:
                     System.out.print("one");
                     break;
@@ -112,11 +111,11 @@ public class UngDungDocSoThanhChu {
                     System.out.print("nine");
                     break;
             }
-            if (donViTram > 13 && donViTram != 15 && donViTram < 20) {
+            if (num/100 > 13 && num/100 != 15 && num/100 < 20) {
                 System.out.print("teen");
             }
-        } else if (so > 20) {
-            switch (donViTram / 10) {
+        } else if (num > 20) {
+            switch (num / 100) {
                 case 2:
                     System.out.print("twenty ");
                     break;
@@ -142,7 +141,7 @@ public class UngDungDocSoThanhChu {
                     System.out.print("ninety ");
                     break;
             }
-            switch (donViTram % 10) {
+            switch (num % 10) {
                 case 1:
                     System.out.print("one");
                     break;
@@ -171,8 +170,8 @@ public class UngDungDocSoThanhChu {
                     System.out.print("nine");
                     break;
             }
-        } else if (so > 10) {
-            switch (so) {
+        } else if (num > 10) {
+            switch (num) {
                 case 11:
                     System.out.print("eleven ");
                     break;
@@ -202,12 +201,12 @@ public class UngDungDocSoThanhChu {
                     break;
             }
         } else {
-            switch (so) {
+            switch (num) {
                 case 0:
                     System.out.print("zero");
                     break;
                 case 10:
-                    System.out.print("tens");
+                    System.out.print("ten");
                     break;
                 case 1:
                     System.out.print("one");
