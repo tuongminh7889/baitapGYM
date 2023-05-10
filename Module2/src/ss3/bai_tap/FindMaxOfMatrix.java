@@ -5,8 +5,21 @@ import java.util.Scanner;
 public class FindMaxOfMatrix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        float[][] arr1 = {{23,45,67},{1,34,54},{35,77,43}};
-        float[][] arr2 = {{32,54,76},{2,43,87},{53,55,9}};
-
+        float max = 0;
+        System.out.println("input row of array ");
+        int r = Integer.parseInt(scanner.nextLine());
+        System.out.println("input col of array ");
+        int c = Integer.parseInt(scanner.nextLine());
+        float[][] arr = new float[r][c];
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                System.out.println("Input element " + i + "&" + j);
+                arr[i][j] = Float.parseFloat(scanner.nextLine());
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+            }
+        }
+        System.out.println(max);
     }
 }
