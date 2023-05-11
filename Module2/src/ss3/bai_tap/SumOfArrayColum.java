@@ -17,9 +17,9 @@ public class SumOfArrayColum {
             for (int j = 0; j < c; j++) {
                 System.out.println("Input element " + i + "&" + j);
                 arr[i][j] = Integer.parseInt(scanner.nextLine());
-                sum += arr[i][colSum];
             }
+            sum += arr[i][colSum];
         }
-        System.out.println("Sum of colum"+colSum+"is"+sum);
+        System.out.println("Sum of colum" + colSum + "is" + sum);
     }
 }
