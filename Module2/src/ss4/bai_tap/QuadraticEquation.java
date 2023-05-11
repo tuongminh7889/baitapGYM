@@ -24,7 +24,7 @@ public class QuadraticEquation {
         if (delta > 0.0) {
             double r1 = (-b + Math.pow(delta, 0.5)) / (2.0 * a);
             double r2 = (-b - Math.pow(delta, 0.5)) / (2.0 * a);
-            System.out.println(r1 +""+r2);
+            System.out.println(r1 + "" + r2);
 
         } else if (delta == 0.0) {
             double r1 = -b / (2.0 * a);
@@ -33,15 +33,16 @@ public class QuadraticEquation {
             System.out.println("The equation has no real roots ");
         }
     }
+
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("input a");
         double a = scanner.nextDouble();
         System.out.print("input b");
         double b = scanner.nextDouble();
         System.out.print("input c");
         double c = scanner.nextDouble();
-        QuadraticEquation BuildClassQuadraticEquation = new QuadraticEquation(a , b , c );
-        BuildClassQuadraticEquation.Result(BuildClassQuadraticEquation.delta, a,b,c);
+        QuadraticEquation BuildClassQuadraticEquation = new QuadraticEquation(a, b, c);
+        BuildClassQuadraticEquation.Result(BuildClassQuadraticEquation.delta, a, b, c);
     }
 }
