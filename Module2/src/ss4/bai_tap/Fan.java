@@ -1,9 +1,9 @@
 package ss4.bai_tap;
 
 public class Fan {
-    private static final int SLOW = 1;
-    private static final int MEDIUM = 2;
-    private static final int FAST = 3;
+    private final int SLOW = 1;
+    private final int MEDIUM = 2;
+    private final int FAST = 3;
     private int speed = SLOW;
     private boolean on = false;
     private double radius = 5;
