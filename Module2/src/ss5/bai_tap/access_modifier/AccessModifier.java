@@ -23,13 +23,6 @@ public class AccessModifier {
         AccessModifier.color = color;
     }
 
-    public static void setRadius(double radius) {
-        AccessModifier.radius = radius;
-    }
-
-    public static String getColor() {
-        return AccessModifier.setColor(String color);
-    }
 
 
 }
