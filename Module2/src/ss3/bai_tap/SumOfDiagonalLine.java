@@ -10,11 +10,11 @@ public class SumOfDiagonalLine {
         int[][] arr = new int[edge][edge];
         int sum = 0;
         for (int i = 0; i < edge; i++) {
-            sum += arr[i][i];
             for (int j = 0; j < edge; j++) {
                 System.out.println("input element to" + i + "&" + j);
                 arr[i][j] = Integer.parseInt(scanner.nextLine());
             }
+            sum += arr[i][i];
         }
         System.out.println("sum of square edge is :" + sum);
     }
