@@ -1,4 +1,4 @@
-package ss5.bai_tap.SetNotGet;
+package ss5.bai_tap.set_not_get;
 
 public class Student {
     private String name = "John";
