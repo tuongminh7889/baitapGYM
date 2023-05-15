@@ -23,7 +23,7 @@ public class AccessModifier {
     }
 
     public String setColor(String color) {
-       return this.color = color;
+        return this.color = color;
     }
 
     public String getColor() {
