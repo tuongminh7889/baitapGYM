@@ -6,7 +6,7 @@ package ss7.bai_tap;
  * Đưa màn hình những câu lệnh khi thay đổi size bằng random percent
  * Hiện bài chưa tối ưu vì chưa đưa phần diện tích vào trong mảng, có thời gian sẽ gán thêm phương thức resize vào từng hình
  */
-public class test extends Shape {
+public class ResizeableTest {
     public static void main(String[] args) {
         Circle circle = new Circle();
         Rectangle rectangle = new Rectangle();
@@ -22,6 +22,10 @@ public class test extends Shape {
         shapes[2] = square;
         System.out.println(shapes[2]);
         shapes[2].resize(Math.random(), square.getArea());
+
+        shapes[0].resize(Math.random());
+        shapes[1].resize(20);
+        shapes[3].resize(120);
 
     }
 }

@@ -8,6 +8,7 @@ package ss7.bai_tap;
  */
 public class Circle extends Shape {
     private double radius = 2.0;
+    private double area;
 
     public Circle() {
     }
@@ -21,6 +22,11 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    public Circle(double radius, String color, boolean filled, double area) {
+        super(color, filled, area);
+        this.radius = radius;
+    }
+
     public double getRadius() {
         return radius;
     }
@@ -30,7 +36,7 @@ public class Circle extends Shape {
     }
 
     public double getArea() {
-        return radius * radius * Math.PI;
+        return area = radius * radius * Math.PI;
     }
 
     public double getPerimeter() {
@@ -43,5 +49,11 @@ public class Circle extends Shape {
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    public void resize(double percent) {
+        if (percent <= 100.0 && percent >= 0.0) {
+            area = radius * radius * Math.PI;
+        }
     }
 }

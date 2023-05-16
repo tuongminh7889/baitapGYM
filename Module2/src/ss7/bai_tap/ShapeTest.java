@@ -6,6 +6,10 @@ public class ShapeTest {
         System.out.println(shape);
         shape = new Shape("red", false);
         System.out.println(shape);
+        shape = new Shape("blue", true, 10.0);
+        System.out.println(shape);
+        shape.resize(10);
+        System.out.println(shape);
     }
 }
 

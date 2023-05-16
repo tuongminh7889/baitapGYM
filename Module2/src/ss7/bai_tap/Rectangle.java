@@ -10,6 +10,7 @@ package ss7.bai_tap;
 public class Rectangle extends Shape {
     private double width = 2.0;
     private double length = 2.0;
+    private double area;
 
     public Rectangle() {
     }
@@ -57,5 +58,11 @@ public class Rectangle extends Shape {
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    public void resize1(double percent) {
+        if (percent <= 100.0 && percent >= 0.0) {
+            area = width * length * (percent / 100);
+        }
     }
 }

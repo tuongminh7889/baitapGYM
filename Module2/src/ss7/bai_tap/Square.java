@@ -6,9 +6,11 @@ package ss7.bai_tap;
  * Mạc định cạnh bằng 2
  * công thức chu vi và cạnh X4
  * công thức diện tích Cạnh X Cạnh
+ * gán phương thúc resize
  */
-public class Square extends Shape {
+public class Square extends Shape implements Colorable {
     private double side = 2.0;
+    private double area;
 
     public Square() {
     }
@@ -44,5 +46,15 @@ public class Square extends Shape {
         return "Square{" +
                 "side=" + side +
                 ", which is a subclass of " + super.toString() + "}";
+    }
+
+    public void resize(double percent) {
+        if (percent <= 100.0 && percent >= 0.0) {
+            area = side * side * (percent / 100);
+        }
+    }
+
+    public String howToColor() {
+        return "Color all four sides";
     }
 }
