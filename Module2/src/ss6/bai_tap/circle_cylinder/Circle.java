@@ -1,17 +1,15 @@
 package ss6.bai_tap.circle_cylinder;
 
-import com.sun.corba.se.impl.interceptors.PICurrent;
-
 public class Circle {
     private double radius = 2.0;
-    private String corlor = "black";
+    private String color = "black";
 
     public Circle() {
     }
 
-    public Circle(double radius, String corlor) {
+    public Circle(double radius, String color) {
         this.radius = radius;
-        this.corlor = corlor;
+        this.color = color;
     }
 
     public double getRadius() {
@@ -22,12 +20,12 @@ public class Circle {
         this.radius = radius;
     }
 
-    public String getCorlor() {
-        return corlor;
+    public String getColor() {
+        return color;
     }
 
-    public void setCorlor(String corlor) {
-        this.corlor = corlor;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     /**
@@ -41,7 +39,7 @@ public class Circle {
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
-                ", corlor='" + corlor +
+                ", color='" + color +
                 ", area =" + getArea() + '\'' +
                 '}';
     }

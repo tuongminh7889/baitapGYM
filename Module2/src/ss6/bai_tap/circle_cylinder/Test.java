@@ -6,7 +6,7 @@ public class Test {
         System.out.println(circle);
         Circle cylinder = new Cylinder(7, "blue", 15);
         if (cylinder instanceof Cylinder) {
-            System.out.println(((Cylinder) cylinder).getVolumn());
+            System.out.println(((Cylinder) cylinder).getVolume());
         }
         System.out.println(cylinder);
     }

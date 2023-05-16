@@ -1,42 +1,40 @@
 package ss6.bai_tap.circle_cylinder;
 
-import ss5.bai_tap.access_modifier.AccessModifier;
-
 public class Cylinder extends Circle {
-    private double hight;
+    private double height;
 
     public Cylinder() {
 
     }
 
-    public Cylinder(double radius, String corlor, double hight) {
-        super(radius, corlor);
-        this.hight = hight;
+    public Cylinder(double radius, String color, double height) {
+        super(radius, color);
+        this.height = height;
     }
 
-    public double getHight() {
-        return hight;
+    public double getHeight() {
+        return height;
     }
 
-    public void setHight(double hight) {
-        this.hight = hight;
+    public void setHeight(double height) {
+        this.height = height;
     }
 
     /**
      * @return công thức tính thể tích : diện tích đáy nhân chiều cao
      */
-    public double getVolumn() {
-        return getArea() * this.hight;
+    public double getVolume() {
+        return getArea() * this.height;
     }
 
     @Override
     public String toString() {
         return "Cylinder{" +
-                "hight=" + getHight() +
+                "height=" + getHeight() +
                 ", radius=" + getRadius() +
-                ", corlor='" + getCorlor() + '\'' +
+                ", color='" + getColor() + '\'' +
                 ", area =" + getArea() +
-                ", volumn =" + getVolumn() +
+                ", volume =" + getVolume() +
                 '}';
     }
 }
